@@ -1,8 +1,12 @@
+@import "variables.css";
+
 footer {
   bottom: 0;
   position: absolute;
   text-align: center;
   width: 100%;
+  color: var(--colorTextSecondary);
+  background-color: var(--backgroundColorSecondary);
 }
 
 a {
