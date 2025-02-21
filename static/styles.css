@@ -1,0 +1,13 @@
+footer {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+}
+
+a {
+  text-decoration: none;
+}
