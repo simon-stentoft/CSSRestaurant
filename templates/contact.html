@@ -1,3 +1,32 @@
 {% include '_header.html' %}
-<body></body>
+<main>
+  <section>
+    <img
+      src="static/assets/restaurant_assets/img/map.jpg"
+      alt="Map"
+      id="imgMap"
+    />
+    <p>Guldbergsgade 29N</p>
+    <p>Phone no.: <span style="font-weight: bold">20 82 53 70</span></p>
+    <p>Email: info@restaurantkea.dk</p>
+  </section>
+  <section>
+    <form action="submit">
+      Contact form
+      <label for="fullName">Full name</label>
+      <input type="text" name="fullName" id="fullName" />
+      <label for="phone">Phone number</label>
+      <input type="tel" name="phone" id="phone" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <label for="persons">Persons</label>
+      <input type="number" name="persons" id="persons" />
+      <label for="date">Date and time</label>
+      <input type="datetime-local" name="date" id="date" />
+      <label for="furtherInfo">Further information</label>
+      <textarea name="furtherInfo" id="furtherInfo"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
 {% include '_footer.html' %}
