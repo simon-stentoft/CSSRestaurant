@@ -1,8 +1,10 @@
 :root {
+  --maxWidth: 1024px;
+
   --colorPrimary: black;
 
   --colorTextSecondary: floralwhite;
-  --backgroundColorSecondary: purple;
+  --backgroundColorSecondary: rgb(106, 4, 106);
 
   --backgroundColorHeader: #ff4040;
 
@@ -11,4 +13,10 @@
   --backgroundColorBlockQuote: #f0f0f0;
 
   --colorNavActive: bisque;
+
+  --headerTextFont: "Pacifico", cursive;
+
+  --backgroundColorCard: lightyellow;
+
+  --menuCardBoxShadow: rgb(0, 0, 0, 0.1);
 }
