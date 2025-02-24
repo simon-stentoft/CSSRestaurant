@@ -3,17 +3,100 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--colorPrimary);
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1#titleHead {
+  background-color: var(--backgroundColorHeader);
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+  color: var(--colorTextSecondary);
+}
+
+header {
+  width: 100%;
 }
 
 footer {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
   bottom: 0;
-  position: absolute;
+  position: relative;
   text-align: center;
   width: 100%;
   color: var(--colorTextSecondary);
   background-color: var(--backgroundColorSecondary);
+  flex-shrink: 0;
 }
 
-a {
+nav {
+  background-color: var(--backgroundColorSecondary);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+nav a {
   text-decoration: none;
+  color: var(--colorTextSecondary);
+  margin: 0.1rem;
+  display: block;
+  padding: 0;
+  border-bottom: 0.1rem solid var(--colorNavActive);
+}
+
+nav a.active {
+  color: var(--colorNavActive);
+}
+
+main {
+  padding: 1rem;
+  max-width: 100%;
+  flex: 1 0 auto;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+
+section p {
+  margin: 0;
+}
+
+section div {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+
+section div p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--colorTextQualities);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0.5rem;
+  font-style: italic;
+  padding-left: 1rem;
+  background-color: var(--backgroundColorBlockQuote);
+  border-radius: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 0 1.25rem;
+    border-bottom: none;
+  }
 }

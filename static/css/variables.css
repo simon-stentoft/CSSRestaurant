@@ -3,4 +3,12 @@
 
   --colorTextSecondary: floralwhite;
   --backgroundColorSecondary: purple;
+
+  --backgroundColorHeader: #ff4040;
+
+  --colorTextQualities: #ff4040;
+
+  --backgroundColorBlockQuote: #f0f0f0;
+
+  --colorNavActive: bisque;
 }
