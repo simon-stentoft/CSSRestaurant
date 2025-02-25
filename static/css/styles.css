@@ -187,6 +187,11 @@ blockquote {
     margin: 0 1.25rem;
     border-bottom: none;
   }
+  .home-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px) {
