@@ -1,42 +1,66 @@
-{% include '_header.html' %}
-<main class="contact-page">
-  <section class="contact-info">
-    <img
-      src="static/assets/restaurant_assets/img/map.jpg"
-      alt="Map"
-      id="imgMap"
-    />
-    <p>Guldbergsgade 29N <br />2200 Copenhagen</p>
-    <p>Phone no.: <span class="span-contact-info">20 82 53 70</span></p>
-    <p>Email: <span class="span-contact-info">info@restaurantkea.dk</span></p>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <title>Restaurant KEA: Home</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="titleHead">Restaurant KEA</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/templates/index.html">Home</a></li>
+          <li><a href="/templates/menu.html">Menu</a></li>
+          <li><a href="/templates/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact-page">
+      <section class="contact-info">
+        <img
+          src="static/assets/restaurant_assets/img/map.jpg"
+          alt="Map"
+          id="imgMap"
+        />
+        <p>Guldbergsgade 29N <br />2200 Copenhagen</p>
+        <p>Phone no.: <span class="span-contact-info">20 82 53 70</span></p>
+        <p>
+          Email: <span class="span-contact-info">info@restaurantkea.dk</span>
+        </p>
+      </section>
 
-  <section class="contact-form">
-    <form action="submit">
-      <fieldset class="form-container">
-        <legend>Contact form</legend>
+      <section class="contact-form">
+        <form action="submit">
+          <fieldset class="form-container">
+            <legend>Contact form</legend>
 
-        <label for="fullName">Full name</label>
-        <input type="text" name="fullName" id="fullName" required />
+            <label for="fullName">Full name</label>
+            <input type="text" name="fullName" id="fullName" required />
 
-        <label for="phone">Phone no.</label>
-        <input type="tel" name="phone" id="phone" required />
+            <label for="phone">Phone no.</label>
+            <input type="tel" name="phone" id="phone" required />
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" min="1" required />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" min="1" required />
 
-        <label for="persons">Persons</label>
-        <input type="number" name="persons" id="persons" required />
+            <label for="persons">Persons</label>
+            <input type="number" name="persons" id="persons" required />
 
-        <label for="date">Date and time</label>
-        <input type="datetime-local" name="date" id="date" required />
+            <label for="date">Date and time</label>
+            <input type="datetime-local" name="date" id="date" required />
 
-        <label for="furtherInfo">Further information</label>
-        <textarea name="furtherInfo" id="furtherInfo"></textarea>
+            <label for="furtherInfo">Further information</label>
+            <textarea name="furtherInfo" id="furtherInfo"></textarea>
 
-        <button type="submit">Send</button>
-      </fieldset>
-    </form>
-  </section>
-</main>
-{% include '_footer.html' %}
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 KEA Development</p>
+    </footer>
+  </body>
+</html>
