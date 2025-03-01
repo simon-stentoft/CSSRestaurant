@@ -46,24 +46,30 @@ nav {
   background-color: var(--backgroundColorSecondary);
   text-align: center;
   padding: 0.5rem;
+  > ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    > li {
+      display: block;
+      border-bottom: 0.1rem solid var(--colorNavActive);
+      &:nth-of-type(3) {
+        border-bottom: none;
+      }
+    }
+  }
 }
 
 nav a {
   text-decoration: none;
   color: var(--colorTextSecondary);
   margin: 0.1rem;
-  display: block;
   padding: 0;
-  border-bottom: 0.1rem solid var(--colorNavActive);
 }
 
-nav a.active {
+nav a.selected {
   color: var(--colorNavActive);
   font-size: 1.2rem;
-}
-
-nav a:last-child {
-  border-bottom: none;
 }
 
 main {
@@ -85,126 +91,13 @@ section img {
   margin-bottom: 0.1rem;
 }
 
-section div:not(.menu-card) p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.4;
-  color: var(--colorTextQualities);
-}
-
-div.menu-card {
-  padding: 1rem;
-  background-color: var(--backgroundColorCard);
-  border-radius: 0.8rem;
-  box-shadow: 0 0.2rem 0.5rem var(--menuCardBoxShadow);
-}
-
-div.menu-card h2 {
-  margin: 0;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: var(--backgroundColorHeader);
-  color: var(--colorTextSecondary);
-  border-radius: 0.8rem;
-  font-family: var(--headerTextFont);
-}
-
-div.menu-card p {
-  margin: 0;
-  padding: 0.5rem;
-  text-align: left;
-}
-
-div.menu-card .price {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  margin: 0.3rem;
-  background-color: var(--backgroundColorHeader);
-  color: var(--colorTextSecondary);
-  border: 0.6rem solid var(--backgroundColorSecondary);
-  border-radius: 0.8rem;
-  text-align: center;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0.5rem;
-  font-style: italic;
-  padding-left: 1rem;
-  background-color: var(--backgroundColorBlockQuote);
-  border-radius: 0.8rem;
-}
-
-/* Contact page styling */
-.contact-page .contact-info {
-  text-align: left;
-}
-.contact-page .contact-info #imgMap {
-  border: 0.15rem solid var(--colorPrimary);
-  padding: 0.8rem;
-  box-sizing: border-box;
-}
-
-.contact-page .contact-info p {
-  margin: 0;
-  padding: 0;
-  > span.span-contact-info {
-    font-weight: bold;
-  }
-}
-
-.contact-form {
-  margin: 0;
-}
-
-.form-container {
-  padding: 1rem;
-  border: 0.1rem solid var(--colorPrimary);
-  border-radius: 0.8rem;
-  margin: 0;
-  > input,
-  textarea {
-    width: 100%;
-  }
-  > textarea {
-    height: 5rem;
-  }
-  > button {
-    cursor: pointer;
-    width: 5rem;
-    border: 0.1rem solid var(--colorPrimary);
-    border-radius: 0.3rem;
-    padding: 0.5rem;
-  }
-}
-
 @media (min-width: 768px) {
   nav {
     text-align: left;
-  }
-  nav a {
-    display: inline-block;
-    margin: 0 1.25rem;
-    border-bottom: none;
-  }
-  .home-page {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .contact-page {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .contact-page .contact-info {
-    flex: 1;
-  }
-
-  .contact-page .contact-form {
-    flex: 1;
+    > ul > li {
+      display: inline-block;
+      margin: 0 0.5rem;
+      border-bottom: none;
+    }
   }
 }

@@ -3,24 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <title>Restaurant KEA: Home</title>
+    <link rel="stylesheet" href="../static/css/contact.css" />
+    <title>Restaurant KEA: Contact</title>
   </head>
   <body>
     <header>
       <h1 id="titleHead">Restaurant KEA</h1>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="/templates/index.html">Home</a></li>
-          <li><a href="/templates/menu.html">Menu</a></li>
-          <li><a href="/templates/contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" title="Home page">Home</a></li>
+        <li><a href="menu.html" title="Menu page">Menu</a></li>
+        <li>
+          <a href="contact.html" title="Contact page" class="selected">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
     <main class="contact-page">
       <section class="contact-info">
         <img
-          src="static/assets/restaurant_assets/img/map.jpg"
+          src="../static/assets/restaurant_assets/img/map.jpg"
           alt="Map"
           id="imgMap"
         />
@@ -46,7 +50,7 @@
             <input type="email" name="email" id="email" min="1" required />
 
             <label for="persons">Persons</label>
-            <input type="number" name="persons" id="persons" required />
+            <input type="number" name="persons" id="persons" required min="1" />
 
             <label for="date">Date and time</label>
             <input type="datetime-local" name="date" id="date" required />

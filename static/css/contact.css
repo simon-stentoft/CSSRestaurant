@@ -1,0 +1,58 @@
+@import "styles.css";
+
+.contact-page .contact-info {
+  text-align: left;
+}
+.contact-page .contact-info #imgMap {
+  border: 0.15rem solid var(--colorPrimary);
+  padding: 0.8rem;
+  box-sizing: border-box;
+}
+
+.contact-page .contact-info p {
+  margin: 0;
+  padding: 0;
+  > span.span-contact-info {
+    font-weight: bold;
+  }
+}
+
+.contact-form {
+  margin: 0;
+}
+
+.form-container {
+  padding: 1rem;
+  border: 0.1rem solid var(--colorPrimary);
+  border-radius: 0.8rem;
+  margin: 0;
+  > input,
+  textarea {
+    width: 100%;
+  }
+  > textarea {
+    height: 5rem;
+  }
+  > button {
+    cursor: pointer;
+    width: 5rem;
+    border: 0.1rem solid var(--colorPrimary);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-page {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .contact-page .contact-info {
+    flex: 1;
+  }
+
+  .contact-page .contact-form {
+    flex: 1;
+  }
+}

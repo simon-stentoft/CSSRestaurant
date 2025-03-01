@@ -3,73 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <title>Restaurant KEA: Home</title>
+    <link rel="stylesheet" href="../static/css/menu.css" />
+    <title>Restaurant KEA: Menu</title>
   </head>
   <body>
     <header>
       <h1 id="titleHead">Restaurant KEA</h1>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="/templates/index.html">Home</a></li>
-          <li><a href="/templates/menu.html">Menu</a></li>
-          <li><a href="/templates/contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" title="Home page">Home</a></li>
+        <li><a href="menu.html" title="Menu page" class="selected">Menu</a></li>
+        <li><a href="contact.html" title="Contact page">Contact</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="menu-items">
         <div class="menu-card">
           <img
-            src="/static/assets/restaurant_assets/img/salad.jpg"
+            src="../static/assets/restaurant_assets/img/salad.jpg"
             alt="Salad"
           />
-          <h2>Turing Salad</h2>
-          <p>
-            Sun-dried tomatos and feta cheese on top of a thin layer of lettuce.
-            Choose between our balsamic, mustard or barbecue dressing.
-          </p>
-          <p class="price">75 kr</p>
+          <div class="menu-card-content">
+            <h2>Turing Salad</h2>
+            <p>
+              Sun-dried tomatos and feta cheese on top of a thin layer of
+              lettuce. Choose between our balsamic, mustard or barbecue
+              dressing.
+            </p>
+            <p class="price">75 kr</p>
+          </div>
         </div>
 
         <div class="menu-card">
           <img
-            src="/static/assets/restaurant_assets/img/pizza.jpg"
+            src="../static/assets/restaurant_assets/img/pizza.jpg"
             alt="Pizza"
           />
-          <h2>Pizza Berners-Lee</h2>
-          <p>
-            Tomato, mozzarella, pepperoni and rucula. Choose between our thin or
-            thick bread base.
-          </p>
-          <p class="price">80 kr</p>
+          <div class="menu-card-content">
+            <h2>Pizza Berners-Lee</h2>
+            <p>
+              Tomato, mozzarella, pepperoni and rucula. Choose between our thin
+              or thick bread base.
+            </p>
+            <p class="price">80 kr</p>
+          </div>
         </div>
 
         <div class="menu-card">
           <img
-            src="/static/assets/restaurant_assets/img/burger.jpg"
+            src="../static/assets/restaurant_assets/img/burger.jpg"
             alt="Burger"
           />
-          <h2>Codd Hamburger</h2>
-          <p>
-            High quality meat, lettuce, tomato, onion, bacon, cheese, jalapenos
-            and a lot of love. Which sauce do you prefer: BBQ, Dijon or
-            mayonaisse? It comes with French fries and coleslaw salad.
-          </p>
-          <p class="price">115 kr</p>
+          <div class="menu-card-content">
+            <h2>Codd Hamburger</h2>
+            <p>
+              High quality meat, lettuce, tomato, onion, bacon, cheese,
+              jalapenos and a lot of love. Which sauce do you prefer: BBQ, Dijon
+              or mayonaisse? It comes with French fries and coleslaw salad.
+            </p>
+            <p class="price">115 kr</p>
+          </div>
         </div>
 
         <div class="menu-card">
           <img
-            src="/static/assets/restaurant_assets/img/cerfcreme.png"
+            src="../static/assets/restaurant_assets/img/cerfcreme.png"
             alt="Cerf Cream"
           />
-          <h2>Cerf creme</h2>
-          <p>
-            Delightful strawberry icecream topped with actual strawberries. In
-            cone or vase. Multiple toppings available.
-          </p>
-          <p class="price">65 kr</p>
+          <div class="menu-card-content">
+            <h2>Cerf creme</h2>
+            <p>
+              Delightful strawberry icecream topped with actual strawberries. In
+              cone or vase. Multiple toppings available.
+            </p>
+            <p class="price">65 kr</p>
+          </div>
         </div>
       </section>
     </main>
