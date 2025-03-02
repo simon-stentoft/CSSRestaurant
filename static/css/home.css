@@ -9,9 +9,8 @@ blockquote {
   border-radius: 0.8rem;
 }
 
-section div:not(.menu-card) p {
+section div .highlights {
   margin: 0;
-  font-size: 1rem;
   line-height: 1.4;
   color: var(--colorTextQualities);
 }
@@ -20,9 +19,28 @@ section div:not(.menu-card) p {
   .home-page {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start; /* Align items at the top */
+    gap: 2rem; /* Space between text and image */
   }
-  img {
-    width: 100%;
+
+  /* Style the new text-content container on the left */
+  .home-page .text-content {
+    display: flex;
+    flex-direction: column; /* Stack <p> and <div> vertically */
+    gap: 1rem; /* Space between the paragraph and qualities list */
+    order: 1;
+  }
+
+  /* Image on the right */
+  .home-page > img {
+    width: 50%;
+    max-width: 50%; /* Match the image width in the design */
+    order: 2;
+  }
+
+  /* Ensure the blockquote section is full-width and centered below */
+  section:last-of-type {
+    display: flex;
+    justify-content: center; /* Center the blockquote */
   }
 }
