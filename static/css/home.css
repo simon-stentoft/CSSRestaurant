@@ -19,28 +19,25 @@ section div .highlights {
   .home-page {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Align items at the top */
-    gap: 2rem; /* Space between text and image */
+    align-items: flex-start;
+    gap: 2rem;
   }
 
-  /* Style the new text-content container on the left */
   .home-page .text-content {
     display: flex;
-    flex-direction: column; /* Stack <p> and <div> vertically */
-    gap: 1rem; /* Space between the paragraph and qualities list */
+    flex-direction: column;
+    gap: 1rem;
     order: 1;
   }
 
-  /* Image on the right */
   .home-page > img {
     width: 50%;
-    max-width: 50%; /* Match the image width in the design */
+    max-width: 50%;
     order: 2;
   }
 
-  /* Ensure the blockquote section is full-width and centered below */
   section:last-of-type {
     display: flex;
-    justify-content: center; /* Center the blockquote */
+    justify-content: center;
   }
 }

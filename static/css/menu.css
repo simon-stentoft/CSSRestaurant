@@ -63,3 +63,57 @@ div.menu-card .price {
     align-self: flex-start;
   }
 }
+
+@media (min-width: 1024px) {
+  section.menu-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  div.menu-card {
+    flex: 1 50%;
+    max-width: 49%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  div.menu-card img {
+    width: 50%;
+    max-width: none;
+    order: 2;
+    height: auto;
+  }
+
+  div.menu-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    order: 1;
+    flex: 1;
+  }
+
+  div.menu-card h2 {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    margin: 0;
+  }
+
+  div.menu-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0.3rem 0;
+    text-align: left;
+  }
+
+  div.menu-card .price {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    margin: 0.3rem 0;
+  }
+}
